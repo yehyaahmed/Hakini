@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/remote_video_view_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="17dp"
+        android:background="#0F000000"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_screen"
+        app:layout_constraintEnd_toStartOf="@+id/btn_screen"
+        app:layout_constraintTop_toTopOf="@+id/btn_screen" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="275dp"
+        android:background="@drawable/bottom_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="17dp"
+        android:background="#0F000000"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_video"
+        app:layout_constraintEnd_toStartOf="@+id/btn_video"
+        app:layout_constraintTop_toTopOf="@+id/btn_video" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="134dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/btn_switch_camera"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="onSwitchCameraClicked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle2_bg" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_switch_camera"
+        app:layout_constraintEnd_toEndOf="@+id/btn_switch_camera"
+        app:layout_constraintStart_toStartOf="@+id/btn_switch_camera"
+        app:layout_constraintTop_toTopOf="@+id/btn_switch_camera"
+        app:srcCompat="@drawable/flip_camera" />
+
+    <ImageView
+        android:id="@+id/btn_mute"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="72dp"
+        android:onClick="onLocalAudioMuteClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/circle_bg" />
+
+    <ImageView
+        android:id="@+id/btn_video"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onVideoMuteClicked"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_mute"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mute"
+        app:srcCompat="@drawable/circle_bg" />
+
+    <ImageView
+        android:id="@+id/btn_screen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_video"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:srcCompat="@drawable/circle_bg" />
+
+    <ImageView
+        android:id="@+id/btn_leave"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_screen"
+        app:layout_constraintEnd_toStartOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle__red_bg" />
+
+    <ImageView
+        android:id="@+id/unmute_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_mute"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mute"
+        app:layout_constraintStart_toStartOf="@+id/btn_mute"
+        app:layout_constraintTop_toTopOf="@+id/btn_mute"
+        app:srcCompat="@drawable/mic_on" />
+
+    <ImageView
+        android:id="@+id/camera_on_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_video"
+        app:layout_constraintEnd_toEndOf="@+id/btn_video"
+        app:layout_constraintStart_toStartOf="@+id/btn_video"
+        app:layout_constraintTop_toTopOf="@+id/btn_video"
+        app:srcCompat="@drawable/camera_on" />
+
+    <ImageView
+        android:id="@+id/share_off_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_screen"
+        app:layout_constraintEnd_toEndOf="@+id/btn_screen"
+        app:layout_constraintStart_toStartOf="@+id/btn_screen"
+        app:layout_constraintTop_toTopOf="@+id/btn_screen"
+        app:srcCompat="@drawable/share_off" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_leave"
+        app:layout_constraintEnd_toEndOf="@+id/btn_leave"
+        app:layout_constraintStart_toStartOf="@+id/btn_leave"
+        app:layout_constraintTop_toTopOf="@+id/btn_leave"
+        app:srcCompat="@drawable/end_call" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="53dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_switch_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_switch_camera"
+        app:srcCompat="@drawable/time_bg" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:text="ميكروفون"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mute"
+        app:layout_constraintStart_toStartOf="@+id/btn_mute"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mute" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:text="كاميرا"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_video"
+        app:layout_constraintStart_toStartOf="@+id/btn_video"
+        app:layout_constraintTop_toBottomOf="@+id/btn_video" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:text="الشاشة"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_screen"
+        app:layout_constraintStart_toStartOf="@+id/btn_screen"
+        app:layout_constraintTop_toBottomOf="@+id/btn_screen" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:text="مغادرة"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_leave"
+        app:layout_constraintStart_toStartOf="@+id/btn_leave"
+        app:layout_constraintTop_toBottomOf="@+id/btn_leave" />
+
+    <Chronometer
+        android:id="@+id/timeVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:format="%MM:SS"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="119dp"
+        android:layout_height="156dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/myscreen_bg"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mute"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/local_video_view_container"
+                android:layout_width="119dp"
+                android:layout_height="156dp"
+                android:background="@color/black">
+
+            </FrameLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

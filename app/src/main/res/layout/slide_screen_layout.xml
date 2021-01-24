@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_slide">
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="134dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/koalaIV"
+        android:layout_width="172dp"
+        android:layout_height="236dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/firstTextSlideScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/koala_hello" />
+
+    <ImageView
+        android:id="@+id/nextIV"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstImageSlideIV"
+        app:srcCompat="@drawable/next" />
+
+    <TextView
+        android:id="@+id/firstTextSlideScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:lineHeight="24dp"
+        android:text="مرحباً! أنا حاكيني"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/secondTextSlideScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/secondTextSlideScreen"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="223dp"
+        android:gravity="center|top"
+        android:lineHeight="24dp"
+        android:text="سأرافقك في رحلتلك نحو صحة نفسية أفضل.
+سأسلك بعض الأسئلة، ثم سنقوم بتخصيص
+التجربة التي تلائمك."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/firstImageSlideIV"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintBottom_toTopOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="@+id/nextIV"
+        app:srcCompat="@drawable/circle_slide_check_bg" />
+
+    <ImageView
+        android:id="@+id/secondImageSlideIV"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/firstImageSlideIV"
+        app:layout_constraintStart_toStartOf="@+id/nextIV"
+        app:layout_constraintTop_toTopOf="@+id/firstImageSlideIV"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/start_now_btn_bg"
+        android:gravity="center"
+        android:lineHeight="24dp"
+        android:text="لنبدأ"
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintBottom_toTopOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="@+id/nextIV"
+        app:srcCompat="@drawable/circle_slide_check_bg" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="@+id/nextIV"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

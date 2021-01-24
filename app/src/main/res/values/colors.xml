@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="gray">#1F000000</color>
+    <color name="red">#ff6363</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue_black">#35405e</color>
+    <color name="pay_color_defult">#278e9a</color>
+    <color name="pay_color_not_defult">#8F268E99</color>
+
+</resources>

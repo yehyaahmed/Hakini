@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/soundAndVideoView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/selected_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <View
+        android:id="@+id/soundOnlyView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/not_selected_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soundAndVideoView" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payAndEndBtn" />
+    <Button
+        android:id="@+id/payAndEndBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/pay_and_finish_bg"
+        android:lineHeight="24dp"
+        android:text="الدفع والإنهاء"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soundOnlyView" />
+
+    <ImageView
+        android:id="@+id/soundAndVideoSelectedIV"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/soundAndVideoView"
+        app:layout_constraintStart_toStartOf="@+id/soundAndVideoView"
+        app:layout_constraintTop_toTopOf="@+id/soundAndVideoView"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/soundOnlyIV"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/soundOnlyView"
+        app:layout_constraintStart_toStartOf="@+id/soundOnlyView"
+        app:layout_constraintTop_toTopOf="@+id/soundOnlyView"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/select" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="right|center"
+        android:lineHeight="24dp"
+        android:text="خطط الدفع"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="right|center"
+        android:lineHeight="24dp"
+        android:text="صوت وفيديو"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/soundAndVideoView"
+        app:layout_constraintTop_toTopOf="@+id/soundAndVideoView" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:lineHeight="24dp"
+        android:text="$29.99"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="right|center"
+        android:lineHeight="24dp"
+        android:text="صوت فقط"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/soundOnlyView"
+        app:layout_constraintTop_toTopOf="@+id/soundOnlyView" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:lineHeight="24dp"
+        android:text="$21.99"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
