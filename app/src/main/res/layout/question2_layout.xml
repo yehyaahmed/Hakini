@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/bg_login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="102dp"
+        android:layout_height="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/koala_head" />
+
+    <TextView
+        android:id="@+id/desc5"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:lineHeight="24dp"
+        android:text="قم بالإجابة عن الأسئلة التالية لتساعدنا\n على تحديد الخدمة الأنسب لك."
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:lineHeight="24dp"
+        android:text="العمر"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/desc5"
+        app:layout_constraintStart_toStartOf="@+id/desc5"
+        app:layout_constraintTop_toBottomOf="@+id/desc5" />
+
+    <TextView
+        android:id="@+id/desc6"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_horizontal"
+        android:lineHeight="24dp"
+        android:text="حدد العمر"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/title5"
+        app:layout_constraintStart_toStartOf="@+id/title5"
+        app:layout_constraintTop_toBottomOf="@+id/title5" />
+
+    <ImageView
+        android:id="@+id/question2Choose1IV"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc6"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question2Choose2IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose1IV"
+        app:layout_constraintStart_toStartOf="@+id/question2Choose1IV"
+        app:layout_constraintTop_toBottomOf="@+id/question2Choose1IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question2Choose3IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose2IV"
+        app:layout_constraintStart_toStartOf="@+id/question2Choose2IV"
+        app:layout_constraintTop_toBottomOf="@+id/question2Choose2IV"
+        app:srcCompat="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/question2Choose4IV"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/question2Choose3IV"
+                app:layout_constraintStart_toStartOf="@+id/question2Choose3IV"
+                app:layout_constraintTop_toBottomOf="@+id/question2Choose3IV"
+                app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose1IV"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose1IV"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose1IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose2IV"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose2IV"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose2IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose3IV"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose3IV"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose3IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose4IV"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose4IV"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose4IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="18-22"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose1IV"
+        app:layout_constraintEnd_toStartOf="@+id/imageView47"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose1IV" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="22-25"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose2IV"
+        app:layout_constraintEnd_toStartOf="@+id/imageView48"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose2IV" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="25-30"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose3IV"
+        app:layout_constraintEnd_toStartOf="@+id/imageView49"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose3IV" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="30 وما فوق"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose4IV"
+        app:layout_constraintEnd_toStartOf="@+id/imageView50"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose4IV" />
+
+            <ImageView
+                android:id="@+id/question2Selected1IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView47"
+                app:layout_constraintEnd_toEndOf="@+id/imageView47"
+                app:layout_constraintStart_toStartOf="@+id/imageView47"
+                app:layout_constraintTop_toTopOf="@+id/imageView47"
+                app:srcCompat="@drawable/select" />
+
+            <ImageView
+                android:id="@+id/question2Selected2IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView48"
+                app:layout_constraintEnd_toEndOf="@+id/imageView48"
+                app:layout_constraintStart_toStartOf="@+id/imageView48"
+                app:layout_constraintTop_toTopOf="@+id/imageView48"
+                app:srcCompat="@drawable/select" />
+
+            <ImageView
+                android:id="@+id/question2Selected3IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView49"
+                app:layout_constraintEnd_toEndOf="@+id/imageView49"
+                app:layout_constraintStart_toStartOf="@+id/imageView49"
+                app:layout_constraintTop_toTopOf="@+id/imageView49"
+                app:srcCompat="@drawable/select" />
+
+            <ImageView
+                android:id="@+id/question2Selected4IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView50"
+                app:layout_constraintEnd_toEndOf="@+id/imageView50"
+                app:layout_constraintStart_toStartOf="@+id/imageView50"
+                app:layout_constraintTop_toTopOf="@+id/imageView50"
+                app:srcCompat="@drawable/select" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/question9Choose1IV"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose2IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose1IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose1IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose1IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose3IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose2IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose2IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose2IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose4IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose3IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose3IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose3IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose5IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose4IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose4IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose4IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose6IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose5IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose5IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose5IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose7IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose6IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose6IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose6IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose8IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose7IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose7IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose7IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose9IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose8IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose8IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose8IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question9Choose10IV"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose9IV"
+        app:layout_constraintStart_toStartOf="@+id/question9Choose9IV"
+        app:layout_constraintTop_toBottomOf="@+id/question9Choose9IV"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView79"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose1IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose1IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose1IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView80"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose2IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose2IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose2IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView81"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose3IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose3IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose3IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView82"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose4IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose4IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose4IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView83"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose5IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose5IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose5IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView84"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose6IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose6IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose6IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView85"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose7IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose7IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose7IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView86"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose8IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose8IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose8IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView87"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose9IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose9IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose9IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView88"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question9Choose10IV"
+        app:layout_constraintEnd_toEndOf="@+id/question9Choose10IV"
+        app:layout_constraintTop_toTopOf="@+id/question9Choose10IV"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="تطوير الذات"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView79"
+        app:layout_constraintEnd_toStartOf="@+id/imageView79"
+        app:layout_constraintTop_toTopOf="@+id/imageView79" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="علاج نفسي عائلي / مشاكل عائلية"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView80"
+        app:layout_constraintEnd_toStartOf="@+id/imageView80"
+        app:layout_constraintTop_toTopOf="@+id/imageView80" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="الاكتئاب"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView81"
+        app:layout_constraintEnd_toStartOf="@+id/imageView81"
+        app:layout_constraintTop_toTopOf="@+id/imageView81" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="القلق"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView82"
+        app:layout_constraintEnd_toStartOf="@+id/imageView82"
+        app:layout_constraintTop_toTopOf="@+id/imageView82" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="مشاكل في التغذية و الشهية"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView83"
+        app:layout_constraintEnd_toStartOf="@+id/imageView83"
+        app:layout_constraintTop_toTopOf="@+id/imageView83" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="مشاكل في النوم"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView84"
+        app:layout_constraintEnd_toStartOf="@+id/imageView84"
+        app:layout_constraintTop_toTopOf="@+id/imageView84" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="الهوية الجنسية"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView85"
+        app:layout_constraintEnd_toStartOf="@+id/imageView85"
+        app:layout_constraintTop_toTopOf="@+id/imageView85" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="الوسواس القهري"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView86"
+        app:layout_constraintEnd_toStartOf="@+id/imageView86"
+        app:layout_constraintTop_toTopOf="@+id/imageView86" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="الصدمة"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView87"
+        app:layout_constraintEnd_toStartOf="@+id/imageView87"
+        app:layout_constraintTop_toTopOf="@+id/imageView87" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="أخر"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView88"
+        app:layout_constraintEnd_toStartOf="@+id/imageView88"
+        app:layout_constraintTop_toTopOf="@+id/imageView88" />
+
+    <ImageView
+        android:id="@+id/question9Selected1IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView79"
+        app:layout_constraintEnd_toEndOf="@+id/imageView79"
+        app:layout_constraintStart_toStartOf="@+id/imageView79"
+        app:layout_constraintTop_toTopOf="@+id/imageView79"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected2IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView80"
+        app:layout_constraintEnd_toEndOf="@+id/imageView80"
+        app:layout_constraintStart_toStartOf="@+id/imageView80"
+        app:layout_constraintTop_toTopOf="@+id/imageView80"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected3IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView81"
+        app:layout_constraintEnd_toEndOf="@+id/imageView81"
+        app:layout_constraintStart_toStartOf="@+id/imageView81"
+        app:layout_constraintTop_toTopOf="@+id/imageView81"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected4IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView82"
+        app:layout_constraintEnd_toEndOf="@+id/imageView82"
+        app:layout_constraintStart_toStartOf="@+id/imageView82"
+        app:layout_constraintTop_toTopOf="@+id/imageView82"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected5IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView83"
+        app:layout_constraintEnd_toEndOf="@+id/imageView83"
+        app:layout_constraintStart_toStartOf="@+id/imageView83"
+        app:layout_constraintTop_toTopOf="@+id/imageView83"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected6IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView84"
+        app:layout_constraintEnd_toEndOf="@+id/imageView84"
+        app:layout_constraintStart_toStartOf="@+id/imageView84"
+        app:layout_constraintTop_toTopOf="@+id/imageView84"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected7IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView85"
+        app:layout_constraintEnd_toEndOf="@+id/imageView85"
+        app:layout_constraintStart_toStartOf="@+id/imageView85"
+        app:layout_constraintTop_toTopOf="@+id/imageView85"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected8IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView86"
+        app:layout_constraintEnd_toEndOf="@+id/imageView86"
+        app:layout_constraintStart_toStartOf="@+id/imageView86"
+        app:layout_constraintTop_toTopOf="@+id/imageView86"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected9IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView87"
+        app:layout_constraintEnd_toEndOf="@+id/imageView87"
+        app:layout_constraintStart_toStartOf="@+id/imageView87"
+        app:layout_constraintTop_toTopOf="@+id/imageView87"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question9Selected10IV"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView88"
+        app:layout_constraintEnd_toEndOf="@+id/imageView88"
+        app:layout_constraintStart_toStartOf="@+id/imageView88"
+        app:layout_constraintTop_toTopOf="@+id/imageView88"
+        app:srcCompat="@drawable/select" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

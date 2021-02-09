@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:layoutDirection="ltr"
+    tools:context=".SubScriptinPlanActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".SubScriptinPlanActivity">
+
+            <Button
+                android:id="@+id/subScriptionContinueBtn"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginBottom="51dp"
+                android:background="@drawable/start_now_btn_bg"
+                android:gravity="center"
+                android:lineHeight="24dp"
+                android:text="متابعة"
+                android:textAlignment="center"
+                android:textColor="#151515"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/view0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subScriptionChoose2IV" />
+
+            <ImageView
+                android:id="@+id/subScriptionChoose1IV"
+                android:layout_width="0dp"
+                android:layout_height="172dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="24dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc6"
+                app:srcCompat="@drawable/rectangle_plan" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/subScriptionChoose1IV"
+                app:layout_constraintStart_toStartOf="@+id/subScriptionChoose1IV"
+                app:layout_constraintTop_toTopOf="@+id/subScriptionChoose1IV"
+                app:srcCompat="@drawable/subscription_normal" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/subScriptionChoose1IV"
+                app:layout_constraintTop_toTopOf="@+id/subScriptionChoose1IV"
+                app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+            <ImageView
+                android:id="@+id/subScriptionChoose2IV"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintEnd_toEndOf="@+id/subScriptionChoose1IV"
+                app:layout_constraintStart_toStartOf="@+id/subScriptionChoose1IV"
+                app:layout_constraintTop_toBottomOf="@+id/subScriptionChoose1IV"
+                app:srcCompat="@drawable/rectangle_plan" />
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/subScriptionChoose2IV"
+                app:layout_constraintStart_toStartOf="@+id/subScriptionChoose2IV"
+                app:layout_constraintTop_toTopOf="@+id/subScriptionChoose2IV"
+                app:srcCompat="@drawable/subscription_not_normal" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/subScriptionChoose2IV"
+                app:layout_constraintTop_toTopOf="@+id/subScriptionChoose2IV"
+                app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+            <ImageView
+                android:id="@+id/subScriptionSelected1IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView41"
+                app:layout_constraintEnd_toEndOf="@+id/imageView41"
+                app:layout_constraintStart_toStartOf="@+id/imageView41"
+                app:layout_constraintTop_toTopOf="@+id/imageView41"
+                app:srcCompat="@drawable/select" />
+
+            <ImageView
+                android:id="@+id/subScriptionSelected2IV"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView44"
+                app:layout_constraintEnd_toEndOf="@+id/imageView44"
+                app:layout_constraintStart_toStartOf="@+id/imageView44"
+                app:layout_constraintTop_toTopOf="@+id/imageView44"
+                app:srcCompat="@drawable/select" />
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:lineHeight="24dp"
+                android:text="الاشتراك في حاكيني"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/desc6"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center|center_horizontal"
+                android:lineHeight="24dp"
+                android:text="الآن، اختر الاشتراك الذي يناسبك"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/title5"
+                app:layout_constraintStart_toStartOf="@+id/title5"
+                app:layout_constraintTop_toBottomOf="@+id/title5" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:gravity="center|right"
+                android:lineHeight="24dp"
+                android:text="اشتراك عادي"
+                android:textColor="#143041"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView41"
+                app:layout_constraintEnd_toStartOf="@+id/imageView41"
+                app:layout_constraintTop_toTopOf="@+id/imageView41" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center|right"
+                android:lineHeight="24dp"
+                android:text="✓"
+                android:textColor="#143041"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView59"
+                app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center|right"
+                android:lineHeight="24dp"
+                android:lineSpacingExtra="0.5dp"
+                android:text="تحدث مع تشاتبوت (chatbot)\n حاكيني الذكي للحصول على تمارين\n المساعدة الذاتية."
+                android:textColor="#143041"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView60"
+                app:layout_constraintTop_toTopOf="@+id/textView60" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:gravity="center|right"
+                android:lineHeight="24dp"
+                android:text="اشتراك ذهبي"
+                android:textColor="#143041"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView44"
+                app:layout_constraintEnd_toStartOf="@+id/imageView44"
+                app:layout_constraintTop_toTopOf="@+id/imageView44" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center|right"
+                android:lineHeight="24dp"
+                android:text="✓"
+                android:textColor="#143041"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView63"
+                app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center|right"
+                android:lineHeight="24dp"
+                android:lineSpacingExtra="0.5dp"
+                android:text="تحدث مع اخصائي نفسي بشكل مباشر\n متى تريد."
+                android:textColor="#143041"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView64"
+                app:layout_constraintTop_toTopOf="@+id/textView64" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center|right"
+                android:lineHeight="24dp"
+                android:text="✓"
+                android:textColor="#143041"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView64"
+                app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center|right"
+                android:lineHeight="24dp"
+                android:lineSpacingExtra="0.5dp"
+                android:text="تماريين المساعدة الذاتية مع chatbot\n حاكيني الذكي."
+                android:textColor="#143041"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView66"
+                app:layout_constraintTop_toTopOf="@+id/textView66" />
+
+            <View
+                android:id="@+id/view0"
+                android:layout_width="134dp"
+                android:layout_height="5dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

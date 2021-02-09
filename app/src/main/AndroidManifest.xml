@@ -9,31 +9,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LogInActivity">
+        <activity android:name=".CalenderActivity" />
+        <activity android:name=".ShowDoctorActivity" />
+        <activity android:name=".ShowAllTherapistActivity"/>
+        <activity android:name=".ChooseTherapistActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".LoadingActivity" />
+        <activity android:name=".SubScriptinPlanActivity" />
+        <activity android:name=".QuestionsActivity" />
+        <activity
+            android:name=".ProfessionActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DetailsUserActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Register2Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LogInActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SlideActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SplachActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".StartNowActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity
-            android:name=".RegisterActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
-        <activity android:name=".SlideActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".SplachActivity" />
-        <activity android:name=".StartNowActivity" >
-
-        </activity>
-        <activity android:name=".PaymentActivity" />
-        <activity android:name=".MainActivity" />
+            android:name=".PaymentActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".VideoCall"
+            android:windowSoftInputMode="adjustPan" />
     </application>
+
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

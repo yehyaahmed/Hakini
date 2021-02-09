@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/chooseItemIV"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageItemIV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageItemIV"
+        app:srcCompat="@drawable/select" />
+
+    <TextView
+        android:id="@+id/detailItemTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right|top"
+        android:lineHeight="20dp"
+        android:maxLines="3"
+        android:text="زميل الكلية البريطانية للأطباء النفسيين
+وعضو مؤسس  الأطباء النفسيين الأردنية"
+        android:textColor="#8F35405E"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageItemIV"
+        app:layout_constraintEnd_toStartOf="@+id/imageItemIV"
+        app:layout_constraintStart_toEndOf="@+id/chooseItemIV"
+        app:layout_constraintTop_toTopOf="@+id/imageItemIV" />
+
+    <TextView
+        android:id="@+id/countryItemTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|right|top"
+        android:lineHeight="20dp"
+        android:text="عمان - الأردن"
+        android:textColor="#8F35405E"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/detailItemTV"
+        app:layout_constraintTop_toBottomOf="@+id/detailItemTV" />
+
+    <TextView
+        android:id="@+id/nameItemTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center|right"
+        android:lineHeight="20dp"
+        android:text="د. بشار النوري"
+        android:textColor="#35405e"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/detailItemTV"
+        app:layout_constraintEnd_toEndOf="@+id/detailItemTV" />
+
+    <TextView
+        android:id="@+id/lineItemTV"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#1F35405E"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryItemTV" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageItemIV"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/subscription_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

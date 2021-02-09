@@ -6,20 +6,34 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowFullscreen">true</item>
-
+        <item name="fontFamily">@font/arbfonts_samim</item>
     </style>
 
     <style name="BottomSheetTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
-    </style>
-    
-    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
-        <item name="background">@android:color/transparent</item>
-    </style>
-    
-    <style name="TextLabel" parent="TextAppearance.Design.Hint">
-        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/arbfonts_samim</item>
     </style>
 
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="background">@android:color/transparent</item>
+        <item name="fontFamily">@font/arbfonts_samim</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/arbfonts_samim</item>
+    </style>
+
+    <style name="spinnerTheme">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="lineHeight">24dp</item>
+        <item name="fontFamily">@font/arbfonts_samim</item>
+    </style>
+
+    <style name="Theme.DoNotDim" parent="android:Theme">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
 
 </resources>

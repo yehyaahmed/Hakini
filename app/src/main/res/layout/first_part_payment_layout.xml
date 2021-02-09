@@ -2,17 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layoutDirection="ltr"
     android:layout_height="wrap_content">
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/doctorImageInPaymentIV"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/exitPaymentActivityTV"
         app:srcCompat="@drawable/subscription_gold" />
 
     <ImageView
@@ -60,9 +61,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:layout_constraintBottom_toBottomOf="@+id/datePaymentTV"
+        app:layout_constraintEnd_toStartOf="@+id/datePaymentTV"
+        app:layout_constraintTop_toTopOf="@+id/datePaymentTV"
         app:srcCompat="@drawable/circle_time_and_day_bg" />
 
     <TextView
@@ -79,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/exitPaymentActivityTV"
         android:layout_width="52dp"
         android:layout_height="24dp"
         android:layout_marginTop="18dp"
@@ -93,7 +94,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/nameDoctorPaymentTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -104,11 +105,11 @@
         android:textColor="@color/blue_black"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintEnd_toStartOf="@+id/doctorImageInPaymentIV"
+        app:layout_constraintTop_toTopOf="@+id/doctorImageInPaymentIV" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/titleDoctorPaymentTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -118,11 +119,11 @@
         android:textColor="@color/blue_black"
         android:textSize="12dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintEnd_toEndOf="@+id/nameDoctorPaymentTV"
+        app:layout_constraintTop_toBottomOf="@+id/nameDoctorPaymentTV" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/countryDoctorPaymentTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
@@ -131,9 +132,9 @@
         android:text="عمان - الأردن"
         android:textColor="@color/blue_black"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintBottom_toBottomOf="@+id/doctorImageInPaymentIV"
+        app:layout_constraintEnd_toEndOf="@+id/titleDoctorPaymentTV"
+        app:layout_constraintTop_toBottomOf="@+id/titleDoctorPaymentTV" />
 
     <TextView
         android:id="@+id/textView10"
@@ -164,7 +165,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/dayNamePaymentTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="19.5dp"
@@ -177,7 +178,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view9" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/changeDatePaymentTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -185,23 +186,23 @@
         android:textColor="@color/pay_color_defult"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintBottom_toBottomOf="@+id/dayNamePaymentTV"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView12" />
+        app:layout_constraintTop_toTopOf="@+id/dayNamePaymentTV" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/datePaymentTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:lineHeight="24dp"
         android:text="14/10/2020"
         android:textColor="@color/blue_black"
         android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintEnd_toEndOf="@+id/dayNamePaymentTV"
+        app:layout_constraintTop_toBottomOf="@+id/dayNamePaymentTV" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/timePaymentTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -209,9 +210,9 @@
         android:text="5-4 مساءً"
         android:textColor="@color/blue_black"
         android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintBottom_toBottomOf="@+id/datePaymentTV"
         app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/textView14" />
+        app:layout_constraintTop_toTopOf="@+id/datePaymentTV" />
 
     <View
         android:id="@+id/view7"
@@ -221,7 +222,7 @@
         android:background="#ceced7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/doctorImageInPaymentIV" />
 
     <View
         android:id="@+id/view9"
@@ -243,7 +244,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/datePaymentTV" />
 
     <View
         android:id="@+id/view8"

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:id="@+id/questionsActivity"
+    tools:context=".QuestionsActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#28959e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/slide6IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/nextTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nextTV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide5IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide6IV"
+            app:layout_constraintStart_toEndOf="@+id/slide6IV"
+            app:layout_constraintTop_toTopOf="@+id/slide6IV"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide4IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide5IV"
+            app:layout_constraintStart_toEndOf="@+id/slide5IV"
+            app:layout_constraintTop_toTopOf="@+id/slide5IV"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide7IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide6IV"
+            app:layout_constraintEnd_toStartOf="@+id/slide6IV"
+            app:layout_constraintTop_toTopOf="@+id/slide6IV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide3IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide4IV"
+            app:layout_constraintStart_toEndOf="@+id/slide4IV"
+            app:layout_constraintTop_toTopOf="@+id/slide4IV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide2IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide3IV"
+            app:layout_constraintStart_toEndOf="@+id/slide3IV"
+            app:layout_constraintTop_toTopOf="@+id/slide3IV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide1IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide2IV"
+            app:layout_constraintStart_toEndOf="@+id/slide2IV"
+            app:layout_constraintTop_toTopOf="@+id/slide2IV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide8IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide7IV"
+            app:layout_constraintEnd_toStartOf="@+id/slide7IV"
+            app:layout_constraintTop_toTopOf="@+id/slide7IV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide9IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide8IV"
+            app:layout_constraintEnd_toStartOf="@+id/slide8IV"
+            app:layout_constraintTop_toTopOf="@+id/slide8IV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide10IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide9IV"
+            app:layout_constraintEnd_toStartOf="@+id/slide9IV"
+            app:layout_constraintTop_toTopOf="@+id/slide9IV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <ImageView
+            android:id="@+id/slide11IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/slide10IV"
+            app:layout_constraintEnd_toStartOf="@+id/slide10IV"
+            app:layout_constraintTop_toTopOf="@+id/slide10IV"
+            app:srcCompat="@drawable/circle_slide_not_check_bg" />
+
+        <TextView
+            android:id="@+id/previousTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center|right"
+            android:lineHeight="24dp"
+            android:text="السابق"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nextTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center|left"
+            android:lineHeight="24dp"
+            android:text="التالي"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/location" />
+
+    <ImageView
+        android:id="@+id/imageView66"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView65"
+        app:layout_constraintStart_toStartOf="@+id/imageView65"
+        app:layout_constraintTop_toBottomOf="@+id/imageView65"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView66"
+        app:layout_constraintStart_toStartOf="@+id/imageView66"
+        app:layout_constraintTop_toBottomOf="@+id/imageView66"
+        app:srcCompat="@drawable/specialties" />
+
+    <ImageView
+        android:id="@+id/moreDetailsInShowDoctorBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionInShowDoctorTV"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInShowDoctorTV"
+        app:srcCompat="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/imageView69"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView67"
+        app:layout_constraintStart_toStartOf="@+id/imageView67"
+        app:layout_constraintTop_toBottomOf="@+id/imageView67"
+        app:srcCompat="@drawable/education" />
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView69"
+        app:layout_constraintTop_toBottomOf="@+id/imageView69"
+        app:srcCompat="@drawable/patients" />
+
+    <ImageView
+        android:id="@+id/twitterInShowDoctorIV"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView111"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/imageView72"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="22dp"
+        android:background="@drawable/social__point_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/twitterInShowDoctorIV"
+        app:layout_constraintStart_toEndOf="@+id/twitterInShowDoctorIV"
+        app:layout_constraintTop_toTopOf="@+id/twitterInShowDoctorIV" />
+
+    <ImageView
+        android:id="@+id/imageView73"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/twitterInShowDoctorIV"
+        app:layout_constraintEnd_toStartOf="@+id/twitterInShowDoctorIV"
+        app:layout_constraintTop_toTopOf="@+id/twitterInShowDoctorIV"
+        app:srcCompat="@drawable/social__point_bg" />
+
+    <ImageView
+        android:id="@+id/instagramInShowDoctorIV"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView72"
+        app:layout_constraintStart_toEndOf="@+id/imageView72"
+        app:layout_constraintTop_toTopOf="@+id/imageView72"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/facebookInShowDoctorIV"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView73"
+        app:layout_constraintEnd_toStartOf="@+id/imageView73"
+        app:layout_constraintTop_toTopOf="@+id/imageView73"
+        app:srcCompat="@drawable/facebook" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="22dp"
+        android:background="#1F82899E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70" />
+
+    <TextView
+        android:id="@+id/countryInShowDoctorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView65"
+        app:layout_constraintTop_toTopOf="@+id/imageView65" />
+
+    <TextView
+        android:id="@+id/descriptionInShowDoctorTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:maxLines="3"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView66"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView66" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:text="المزيد"
+        android:textSize="12dp"
+        android:textColor="#278e9a"
+        android:gravity="center|right"
+        android:lineHeight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/moreDetailsInShowDoctorBtn"
+        app:layout_constraintEnd_toStartOf="@+id/moreDetailsInShowDoctorBtn"
+        app:layout_constraintTop_toTopOf="@+id/moreDetailsInShowDoctorBtn" />
+
+    <TextView
+        android:id="@+id/textView106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="الإختصاصات"
+        android:textSize="12dp"
+        android:gravity="center|right"
+        android:lineHeight="20dp"
+        android:textColor="#8F35405E"
+        app:layout_constraintEnd_toStartOf="@+id/imageView67"
+        app:layout_constraintTop_toTopOf="@+id/imageView67" />
+
+    <TextView
+        android:id="@+id/specialtiesInShowDoctorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView106"
+        app:layout_constraintTop_toBottomOf="@+id/textView106" />
+
+    <TextView
+        android:id="@+id/textView108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="جامعة كاليفورنيا"
+        android:textSize="12dp"
+        android:gravity="center|right"
+        android:lineHeight="20dp"
+        android:textColor="#8F35405E"
+        app:layout_constraintEnd_toStartOf="@+id/imageView69"
+        app:layout_constraintTop_toTopOf="@+id/imageView69" />
+
+    <TextView
+        android:id="@+id/academeInShowDoctorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView108"
+        app:layout_constraintTop_toBottomOf="@+id/textView108" />
+
+    <TextView
+        android:id="@+id/pepoleInShowDoctorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:textColor="@color/blue_black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView70"
+        app:layout_constraintTop_toTopOf="@+id/imageView70" />
+
+    <View
+        android:id="@+id/view22"
+        android:layout_width="134dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twitterInShowDoctorIV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

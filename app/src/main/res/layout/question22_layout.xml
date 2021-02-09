@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/bg_login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="102dp"
+        android:layout_height="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/koala_head" />
+
+    <ImageView
+        android:id="@+id/question2Choose1IV0"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc6"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question2Choose2IV0"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose1IV0"
+        app:layout_constraintStart_toStartOf="@+id/question2Choose1IV0"
+        app:layout_constraintTop_toBottomOf="@+id/question2Choose1IV0"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/question2Choose3IV0"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose2IV0"
+        app:layout_constraintStart_toStartOf="@+id/question2Choose2IV0"
+        app:layout_constraintTop_toBottomOf="@+id/question2Choose2IV0"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose1IV0"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose1IV0"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose1IV0"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose2IV0"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose2IV0"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose2IV0"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose3IV0"
+        app:layout_constraintEnd_toEndOf="@+id/question2Choose3IV0"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose3IV0"
+        app:srcCompat="@drawable/cirecle_accademe_bg" />
+
+    <ImageView
+        android:id="@+id/question2Selected1IV0"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question2Selected2IV0"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView34"
+        app:layout_constraintEnd_toEndOf="@+id/imageView34"
+        app:layout_constraintStart_toStartOf="@+id/imageView34"
+        app:layout_constraintTop_toTopOf="@+id/imageView34"
+        app:srcCompat="@drawable/select" />
+
+    <ImageView
+        android:id="@+id/question2Selected3IV0"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+        app:layout_constraintEnd_toEndOf="@+id/imageView35"
+        app:layout_constraintStart_toStartOf="@+id/imageView35"
+        app:layout_constraintTop_toTopOf="@+id/imageView35"
+        app:srcCompat="@drawable/select" />
+
+    <TextView
+        android:id="@+id/desc5"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:lineHeight="24dp"
+        android:text="قم بالإجابة عن الأسئلة التالية لتساعدنا\n على تحديد الخدمة الأنسب لك."
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:lineHeight="24dp"
+        android:text="علاقات عاطفية"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/desc5"
+        app:layout_constraintStart_toStartOf="@+id/desc5"
+        app:layout_constraintTop_toBottomOf="@+id/desc5" />
+
+    <TextView
+        android:id="@+id/desc6"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_horizontal"
+        android:lineHeight="24dp"
+        android:text="ما هي مشاكلك في العلاقات العاطفية؟"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/title5"
+        app:layout_constraintStart_toStartOf="@+id/title5"
+        app:layout_constraintTop_toBottomOf="@+id/title5" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="ألم الانفصال"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose1IV0"
+        app:layout_constraintEnd_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose1IV0" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="بناء علاقة صحية"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose2IV0"
+        app:layout_constraintEnd_toStartOf="@+id/imageView34"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose2IV0" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:text="التخلص من علاقة سامة"
+        android:textColor="#143041"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question2Choose3IV0"
+        app:layout_constraintEnd_toStartOf="@+id/imageView35"
+        app:layout_constraintTop_toTopOf="@+id/question2Choose3IV0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

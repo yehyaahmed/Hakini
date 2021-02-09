@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:id="@+id/showDoctorActivity"
+    tools:context=".ShowDoctorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".LogInActivity">
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="wrap_content"
+        android:layout_height="198dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/therapist_cover_doctor" />
+
+    <ImageView
+        android:id="@+id/backDoctorIV"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/doctorImageInShowDoctorIV"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView56"/>
+
+    <TextView
+        android:id="@+id/nameDoctorInShowDoctorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center|right"
+        android:lineHeight="24dp"
+        android:textColor="@color/blue_black"
+        app:layout_constraintEnd_toEndOf="@+id/doctorImageInShowDoctorIV"
+        app:layout_constraintTop_toBottomOf="@+id/doctorImageInShowDoctorIV" />
+
+            <TextView
+                android:id="@+id/titleDoctorInShowDoctorTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center|right"
+                android:lineHeight="20dp"
+                android:textColor="#8F35405E"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/nameDoctorInShowDoctorTV"
+                app:layout_constraintTop_toBottomOf="@+id/nameDoctorInShowDoctorTV" />
+
+            <Button
+        android:id="@+id/setDateInShowDoctorBtn"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="احجز موعداً"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:lineHeight="24dp"
+        android:background="@drawable/continue_btn_bg"
+        app:layout_constraintEnd_toEndOf="@+id/titleDoctorInShowDoctorTV"
+        app:layout_constraintStart_toEndOf="@+id/shareInShowDoctorIV"
+        app:layout_constraintTop_toBottomOf="@+id/titleDoctorInShowDoctorTV" />
+
+    <ImageView
+        android:id="@+id/shareInShowDoctorIV"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/setDateInShowDoctorBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/setDateInShowDoctorBtn"
+        app:srcCompat="@drawable/rectangle_doctor" />
+
+    <ImageView
+        android:id="@+id/imageView64"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shareInShowDoctorIV"
+        app:layout_constraintEnd_toEndOf="@+id/shareInShowDoctorIV"
+        app:layout_constraintStart_toStartOf="@+id/shareInShowDoctorIV"
+        app:layout_constraintTop_toTopOf="@+id/shareInShowDoctorIV"
+        app:srcCompat="@drawable/share" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#1F82899E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDateInShowDoctorBtn" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView101">
+
+                <include
+                    layout="@layout/show_doctor_part1_layout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

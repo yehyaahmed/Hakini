@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:layoutDirection="ltr"
+    android:id="@+id/detailsUserActivity"
+    tools:context=".DetailsUserActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            tools:context=".DetailsUserActivity">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="172dp"
+                android:layout_height="236dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/koala_login" />
+
+            <Spinner
+                android:id="@+id/sexSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/register_text_bg"
+                android:entries="@array/sex"
+                android:padding="20dp"
+                android:popupBackground="#1d6081"
+                android:textAlignment="textEnd"
+                android:theme="@style/spinnerTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/countrySpinner"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/register_text_bg"
+                android:entries="@array/country"
+                android:padding="20dp"
+                android:popupBackground="#1d6081"
+                android:textAlignment="textEnd"
+                android:theme="@style/spinnerTheme"
+                app:layout_constraintLeft_toLeftOf="@+id/textInputLayout3"
+                app:layout_constraintRight_toRightOf="@+id/textInputLayout3"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:lineHeight="24dp"
+                android:text="إنشاء حساب في حاكيني"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:lineHeight="24dp"
+                android:text="مرحباً بك"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+            <TextView
+                android:id="@+id/haveAccountInDetailsTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="35dp"
+                android:gravity="center"
+                android:lineHeight="24dp"
+                android:text="لديك بالفعل حساب؟ تسجيل الدخول"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/view16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailsContinueBtn" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="134dp"
+                android:layout_height="5dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/register_text_bg"
+                android:hint="سنة الولادة"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="4dp"
+                android:textColorHint="@color/white"
+                app:hintTextAppearance="@style/TextLabel"
+                app:hintTextColor="#A3FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/sexSpinner"
+                app:layout_constraintStart_toStartOf="@+id/sexSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/sexSpinner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/yearBornEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:lineHeight="24dp"
+                    android:paddingTop="8dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:hintTextColor="#A3FFFFFF" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sexSpinner"
+                app:layout_constraintStart_toStartOf="@+id/sexSpinner"
+                app:layout_constraintTop_toTopOf="@+id/sexSpinner"
+                app:srcCompat="@drawable/dropdown" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/countrySpinner"
+                app:layout_constraintStart_toStartOf="@+id/countrySpinner"
+                app:layout_constraintTop_toTopOf="@+id/countrySpinner"
+                app:srcCompat="@drawable/dropdown" />
+
+            <Button
+                android:id="@+id/detailsContinueBtn"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/start_now_btn_bg"
+                android:gravity="center"
+                android:lineHeight="24dp"
+                android:text="متابعة"
+                android:textAlignment="center"
+                android:textColor="#151515"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/countrySpinner"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/countrySpinner"
+                app:layout_constraintTop_toBottomOf="@+id/countrySpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

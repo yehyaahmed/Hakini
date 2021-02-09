@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplachActivity"
+    android:layoutDirection="ltr"
     android:background="@drawable/bg_splach">
 
   <TextView
@@ -18,7 +19,7 @@
       android:text="صحة نفسية أفضل"
       android:textAlignment="center"
       android:textColor="@color/white"
-      android:textSize="15sp"
+      android:textSize="15dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView9" />

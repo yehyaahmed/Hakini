@@ -15,7 +15,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.yehyaayash99.hakini.R;
-import com.yehyaayash99.hakini.RegisterActivity;
+import com.yehyaayash99.hakini.Register2Activity;
 
 public class SlideViewPagerAdapter extends PagerAdapter {
 
@@ -101,7 +101,7 @@ public class SlideViewPagerAdapter extends PagerAdapter {
                 startBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(context, RegisterActivity.class);
+                        Intent intent = new Intent(context, Register2Activity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         context.startActivity(intent);
                     }
